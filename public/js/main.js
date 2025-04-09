@@ -1,10 +1,16 @@
-
+// borrowed this beauty
 // https://gongs-unlimited.com/products/freenotes-waves-a-440-hz?srsltid=AfmBOoqWFxwv85WlnkBfxy1TFhJ_ycw5x_4JgTE2agKuncQhOF-1DbcV&variant=43676800942272
 
 const piano = new VirtualPiano();
 
 document.getElementById('load').addEventListener('click', async () => {
 	await piano.loadSample('audio/out.mp3');
+
+
+	setTimeout(() => {	
+		piano.playKey(40);
+	}, 1000);
+
 });
 
 let keyState = {
