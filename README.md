@@ -1,4 +1,4 @@
-# Meltron Concept
+# Old School Sampler
 
 88 Playing streams, with their playback speed changed to match the target pitch 
 change between relative notes.
