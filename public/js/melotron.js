@@ -2,7 +2,7 @@
 // This implementation creates 88 audio buffers, each playing at different rates
 // to achieve the correct pitch for each piano key from a single audio sample
 
-class VirtualPiano {
+class Chaberlin {
 	constructor() {
 		this.audioCtx = null;
 		this.sampleBuffer = null;

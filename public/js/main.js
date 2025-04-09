@@ -1,17 +1,29 @@
 // borrowed this beauty
 // https://gongs-unlimited.com/products/freenotes-waves-a-440-hz?srsltid=AfmBOoqWFxwv85WlnkBfxy1TFhJ_ycw5x_4JgTE2agKuncQhOF-1DbcV&variant=43676800942272
 
-const piano = new VirtualPiano();
+const piano = new Chaberlin();
 
 document.getElementById('load').addEventListener('click', async () => {
-	await piano.loadSample('audio/out.mp3');
+	await piano.loadSample('audio/note.wav');
 
 
 	setTimeout(() => {	
+		/*
 		piano.playKey(40);
+		piano.playKey(44);
+		piano.playKey(47);
+		piano.playKey(52);
+		*/
+		// can also do this
+		piano.playChord([30,44,59,64,68]);
+
 	}, 1000);
 
 });
+
+/*
+
+at some point make a UI maybe
 
 let keyState = {
 	40: false, // C4
@@ -50,4 +62,4 @@ document.addEventListener('keyup', (event) => {
 		}
 	}
 });
-
+*/
